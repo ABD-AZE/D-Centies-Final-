@@ -1,7 +1,7 @@
-import FormContainer from "../components/FormContainer";
-import QuizContainer from "../components/QuizContainer";
-import Header from "../components/Header";
-import ProjectNfo from "../components/ProjectNfo";
+import FormContainer from "./FormContainer";
+import QuizContainer from "./QuizContainer";
+import Header from "./Header";
+import ProjectNfo from "./ProjectNfo";
 import styles from "../Webpage8.module.css";
 
 import React from "react";
