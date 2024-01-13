@@ -1,6 +1,7 @@
 import {app} from "./db.js";
 import bodyParser from 'body-parser';
 import question from './quiz.model.js';
+import { user } from "./user.model.js";
 function createquiz(){
     app.post('/host/submitQuestions',(req,res)=>{
         const numberOfQuestions = req.body.numberOfQuestions;
