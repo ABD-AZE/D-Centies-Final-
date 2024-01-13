@@ -1,0 +1,47 @@
+.blankLine {
+  margin: 0;
+}
+.dCenties {
+  position: absolute;
+  top: -21px;
+  left: 117px;
+  line-height: 120%;
+}
+.sobre {
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+  white-space: pre-wrap;
+}
+.tabDefault {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.header,
+.nav {
+  position: absolute;
+}
+.nav {
+  top: 14px;
+  right: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 48px;
+  font-size: 18px;
+  font-family: Raleway;
+}
+.header {
+  width: 100%;
+  top: 46px;
+  right: 30px;
+  left: -30px;
+  height: 56px;
+  text-align: left;
+  font-size: 40px;
+  color: #25282b;
+  font-family: "Playfair Display";
+}

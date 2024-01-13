@@ -1,0 +1,82 @@
+.desktop1 {
+  position: absolute;
+  top: 0;
+  left: 27px;
+  background-color: #fff;
+  width: 1413px;
+  height: 738px;
+  overflow: hidden;
+}
+.quizz {
+  font-family: Playball;
+  color: #ffc637;
+}
+.title {
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+  width: 486px;
+  text-shadow: 1px 0 0#ffc637, 0 1px 0#ffc637, -1px 0 0#ffc637, 0-1px 0#ffc637;
+}
+.givingQuizzesIs {
+  margin-block-start: 0;
+  margin-block-end: 24px;
+}
+.blankLine {
+  margin: 0;
+  font-size: 24px;
+}
+.text {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  width: 486px;
+}
+.content,
+.subheadline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.subheadline {
+  font-size: 30px;
+  color: #828282;
+  font-family: Nunito;
+}
+.content {
+  width: 521px;
+  gap: 32px;
+}
+.dollarIcon,
+.intro {
+  position: absolute;
+  overflow: hidden;
+}
+.intro {
+  top: 177px;
+  left: 96px;
+  width: 486px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dollarIcon {
+  top: 361px;
+  left: 623px;
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+.webpage1 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 72px;
+  color: #000;
+  font-family: "Playfair Display";
+}
