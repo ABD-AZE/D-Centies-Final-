@@ -3,22 +3,19 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Web3 from 'web3';
 
-const YourComponent = () => {
-    const [web3, setWeb3] = useState(null);
-    const [accounts, setAccounts] = useState([]);
-  
-    const connectToMetamask = async () => {
-      try {
+
+const connectToMetamask = async () => {
+    try {
         // Check if MetaMask is installed
-        if (window.ethereum) {
+    if (window.ethereum) {
           // Enable Ethereum provider
           await window.ethereum.enable();
           const web3Instance = new Web3(window.ethereum);
-          setWeb3(web3Instance);
   
           // Get the current accounts
           const accounts = await web3Instance.eth.getAccounts();
-          setAccounts(accounts);
+
+          alert( accounts)
         } else {
           console.error('MetaMask not detected! Please install MetaMask extension.');
         }
@@ -56,12 +53,12 @@ const NavItem = styled.div`
     transition: color 0.3s ease;
 
     &:hover {
-      color: #1a5276;
+      color: #1a5276;c
     }
   }
 `;
 
-const Navbar = () => {
+export default function Navbar () {
   return (
     <NavbarWrapper>
       <Logo>D-Centies</Logo>
@@ -70,11 +67,9 @@ const Navbar = () => {
         
         <NavItem><Link to="/About">About</Link></NavItem>
         <NavItem><a href="/">Contact</a></NavItem>
-        <NavItem><a href="/" onClick={YourComponent}>Connect to Metamask</a></NavItem>
+        <NavItem><Link to="/" onClick={connectToMetamask}>connect to metamask</Link></NavItem>
         
       </NavItems>
     </NavbarWrapper>
   );
 };
-
-export  default Navbar;
