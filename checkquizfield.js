@@ -6,6 +6,7 @@ function checkquizfield(){
     app.get("/:publicKey",async (req,res)=>{
         const publicKey = req.params.publicKey;
         const x = await user.findOne({publicKey:publicKey});
+        if(x){
         console.log(`${publicKey}`);
         if(x.quizName){
             res.send(await question.findOne({quizName:x.quizName}));
@@ -14,6 +15,14 @@ function checkquizfield(){
         else{
             res.send("");
             console.log("Df")
+        }
+        }
+        else{
+            const newuser = new user({
+                publicKey:publicKey
+            })
+            newuser.save();
+            res.send("");
         }
     });
 }

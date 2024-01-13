@@ -18,7 +18,7 @@ export default function Webpage4() {
 
         // Get the current accounts
         const accounts = await web3Instance.eth.getAccounts();
-
+        setAccount(accounts); 
         axios.post(`http://localhost:8000/${accounts}`,accounts);
 
         alert(accounts);

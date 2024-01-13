@@ -9,6 +9,7 @@ import Webpage8 from "./components/Webpage8.jsx";
 import Webpage10 from "./components/Webpage10.jsx";
 import Webpage11 from "./components/Webpage11.jsx";
 import Home from "./components/Home.jsx";
+import { AccountProvider } from "./components/AccountContext.js";
 
 const App = () => {
   return (
