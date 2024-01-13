@@ -1,8 +1,35 @@
 import styles from "../Webpage4.module.css";
+import Web3 from "web3"
+import {useNavigate} from "react-router-dom"
 
 import React from "react";
 
 export default function Webpage4() {
+
+  const navigate=useNavigate();
+
+  const connectToMetamask = async () => {
+    try {
+        // Check if MetaMask is installed
+    if (window.ethereum) {
+          // Enable Ethereum provider
+          await window.ethereum.enable();
+          const web3Instance = new Web3(window.ethereum);
+  
+          // Get the current accounts
+          const accounts = await web3Instance.eth.getAccounts();
+
+          alert( accounts)
+
+          navigate("/home")
+          
+        } else {
+          console.error('MetaMask not detected! Please install MetaMask extension.');
+        }
+      } catch (error) {
+        console.error('Error connecting to MetaMask:', error);
+      }
+    };
   return (
     <div className={styles.webpage4}>
       <div className={styles.login}>
@@ -18,7 +45,7 @@ export default function Webpage4() {
           <div className={styles.linkWrapper}>
             <div className={styles.link}>
               <span>{`  `}</span>
-              <span className={styles.link1}>{`  link `}</span>
+              <button style={{backgroundColor:'#F2DB09'}} className={styles.link1} onClick={connectToMetamask}>{`  link `}</button>
             </div>
           </div>
         </div>

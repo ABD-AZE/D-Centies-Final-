@@ -1,31 +1,11 @@
 import React,{useState} from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Web3 from 'web3';
 
 
-const connectToMetamask = async () => {
-    try {
-        // Check if MetaMask is installed
-    if (window.ethereum) {
-          // Enable Ethereum provider
-          await window.ethereum.enable();
-          const web3Instance = new Web3(window.ethereum);
-  
-          // Get the current accounts
-          const accounts = await web3Instance.eth.getAccounts();
-
-          alert( accounts)
-        } else {
-          console.error('MetaMask not detected! Please install MetaMask extension.');
-        }
-      } catch (error) {
-        console.error('Error connecting to MetaMask:', error);
-      }
-    };
 
 const NavbarWrapper = styled.div`
-  background: #2980b9;
+  background: #F2DB09;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -66,8 +46,8 @@ export default function Navbar () {
         <NavItem><Link to="/">Home</Link></NavItem>
         
         <NavItem><Link to="/About">About</Link></NavItem>
-        <NavItem><a href="/">Contact</a></NavItem>
-        <NavItem><Link to="/" onClick={connectToMetamask}>connect to metamask</Link></NavItem>
+        <NavItem><Link to="/Contact">Contact</Link></NavItem>
+        <NavItem><Link to="/connect">connect to metamask</Link></NavItem>
         
       </NavItems>
     </NavbarWrapper>
