@@ -1,8 +1,11 @@
 import {app} from "./db.js";
+import bodyParser from 'body-parser';
+import question from './quiz.model.js';
 function createquiz(){
     app.post('/host/submitQuestions',(req,res)=>{
         const numberOfQuestions = req.body.numberOfQuestions;
-        const quizName = req.body.quizName; 
+        console.log(numberOfQuestions);
+        const quizName = req.body.quizName;
         const receivedData = req.body.data;
         const questionsArray=[];
         console.log(receivedData);
@@ -21,8 +24,8 @@ function createquiz(){
             numberOfQuestions: numberOfQuestions,
             questions: questionsArray
         });
-
-        newQuestion.save();   
+        newQuestion.save();
+        res.send("");   
     });
 }
 export default createquiz;
