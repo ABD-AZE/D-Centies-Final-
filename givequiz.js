@@ -1,3 +1,5 @@
+import {app} from "./db.js";
+function givequiz(){
 app.get("/:publicKey/givequiz", async (req, res) => {
     const publickey = req.params.publicKey;
   
@@ -22,3 +24,5 @@ app.get("/:publicKey/givequiz", async (req, res) => {
       res.status(500).send("Internal Server Error");
     }
   });
+}
+export default givequiz;
