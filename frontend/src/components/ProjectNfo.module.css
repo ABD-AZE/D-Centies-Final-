@@ -1,0 +1,51 @@
+.text {
+  align-self: stretch;
+  font-size: 40px;
+}
+.text,
+.text1,
+.text2 {
+  position: relative;
+  line-height: 150%;
+}
+.text1 {
+  align-self: stretch;
+  font-family: Nunito;
+  color: #828282;
+}
+.text2 {
+  font-weight: 500;
+}
+.botoSecudrio,
+.textParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.botoSecudrio {
+  border-radius: 24px;
+  border: 1px solid #25282b;
+  flex-direction: row;
+  padding: 8px 24px;
+  font-family: Roboto;
+}
+.textParent {
+  position: absolute;
+  height: 44.27%;
+  width: 82%;
+  top: 27.96%;
+  right: 7.84%;
+  bottom: 27.77%;
+  left: 10.16%;
+  flex-direction: column;
+  gap: 24px;
+}
+.projectNfo {
+  background-color: #fff;
+  width: 496px;
+  height: 524px;
+  text-align: left;
+  font-size: 18px;
+  color: #25282b;
+  font-family: "Playfair Display";
+}

@@ -1,0 +1,147 @@
+.loginChild,
+.maskGroupIcon,
+.vectorIcon {
+  position: absolute;
+  width: 1165px;
+  height: 1080px;
+}
+.loginChild {
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.maskGroupIcon,
+.vectorIcon {
+  top: -309px;
+  left: 8px;
+}
+.vectorIcon {
+  height: 0.14%;
+  width: 100%;
+  top: 93.22%;
+  right: 0;
+  bottom: 6.64%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.loginItem {
+  position: absolute;
+  top: 167px;
+  left: 244px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 19px 40px rgba(0, 0, 0, 0.05);
+  width: 598px;
+  height: 747px;
+}
+.buttonChild,
+.letzConnect,
+.logo {
+  position: absolute;
+  width: 422px;
+  height: 108px;
+}
+.letzConnect {
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+.buttonChild,
+.logo {
+  top: 99px;
+  left: 556px;
+}
+.buttonChild {
+  top: 0;
+  left: 0;
+  border-radius: 23px;
+  background-color: #f5df3b;
+  width: 323px;
+  height: 85.5px;
+}
+.link1 {
+  font-size: 40px;
+}
+.button,
+.link,
+.linkWrapper {
+  position: absolute;
+  width: 127px;
+  height: 55.8px;
+}
+.link {
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: pre-wrap;
+  display: inline-block;
+}
+.button,
+.linkWrapper {
+  top: 15px;
+  left: 53px;
+}
+.button {
+  top: 540px;
+  left: 591px;
+  width: 323px;
+  height: 85.5px;
+  font-size: 32px;
+  color: #110f0f;
+  font-family: Poppins;
+}
+.loginInner {
+  position: absolute;
+  top: 0;
+  left: 1164px;
+  background-color: rgba(242, 219, 9, 0.77);
+  width: 756px;
+  height: 1080px;
+}
+.metamask1Icon,
+.undrawOnlineTestReKyfx2Icon {
+  position: absolute;
+  top: 193px;
+  left: 1228px;
+  width: 590px;
+  height: 504px;
+  object-fit: cover;
+}
+.metamask1Icon {
+  top: 169px;
+  left: 486px;
+  width: 527px;
+  height: 346px;
+}
+.login {
+  position: absolute;
+  top: -50px;
+  left: -432px;
+  border-radius: 50px;
+  background-color: #ffede1;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+.logoutIcon {
+  position: absolute;
+  top: 511px;
+  left: 351px;
+  width: 76px;
+  height: 50px;
+  object-fit: cover;
+}
+.webpage4 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 70px;
+  color: #f5df3b;
+  font-family: PoetsenOne;
+}
