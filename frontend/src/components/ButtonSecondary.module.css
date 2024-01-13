@@ -1,0 +1,18 @@
+.text {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.buttonSecondary {
+  border-radius: 8px;
+  border: 2px solid #25282b;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 24px;
+  text-align: left;
+  font-size: 18px;
+  color: #25282b;
+  font-family: Roboto;
+}

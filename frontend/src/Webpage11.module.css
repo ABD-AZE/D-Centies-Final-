@@ -1,0 +1,106 @@
+.about,
+.home {
+  position: absolute;
+  top: 38px;
+  left: 828px;
+}
+.about {
+  left: 934px;
+}
+.contactUs,
+.webpage11Child {
+  position: absolute;
+  top: 38px;
+  left: 1056px;
+}
+.webpage11Child {
+  top: 29px;
+  left: 1247px;
+  border-radius: 19px;
+  background-color: #ffe45a;
+  box-shadow: -1px 0 14px -1px rgba(0, 0, 0, 0.25);
+  width: 179px;
+  height: 51px;
+}
+.thankYU {
+  position: absolute;
+  top: 36px;
+  left: calc(50% - 529px);
+  font-size: 180px;
+  font-family: Kadwa;
+  color: #ffd600;
+  white-space: pre-wrap;
+}
+.image1Icon {
+  position: absolute;
+  top: 351px;
+  left: -194px;
+  width: 612px;
+  height: 610px;
+  object-fit: cover;
+}
+.weHaveReceived {
+  position: absolute;
+  top: 370px;
+  left: 301px;
+  font-size: 36px;
+  white-space: pre-wrap;
+}
+.subscribe {
+  position: absolute;
+  top: 55px;
+  left: 1271px;
+  color: #130a0a;
+  display: none;
+}
+.image2Icon {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  width: 145px;
+  height: 155px;
+  object-fit: cover;
+}
+.webpage11Item {
+  position: absolute;
+  top: 349px;
+  left: 1054px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 4px;
+  height: 4px;
+}
+.image3Icon,
+.image4Icon {
+  position: absolute;
+  top: 426px;
+  left: 1259px;
+  width: 121.2px;
+  height: 116px;
+  object-fit: contain;
+}
+.image4Icon {
+  top: 124px;
+  left: 983px;
+  border-radius: 75px;
+  width: 163px;
+  height: 182px;
+  object-fit: cover;
+}
+.disconnect {
+  position: absolute;
+  top: 38px;
+  left: 1259px;
+}
+.webpage11 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 840px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 32px;
+  color: #000;
+  font-family: "Josefin Sans";
+}
