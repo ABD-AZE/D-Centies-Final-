@@ -1,10 +1,14 @@
-import ButtonPrimary from "../components/ButtonPrimary";
-import ButtonSecondary from "../components/ButtonSecondary";
-import CardForm from "../components/CardForm";
-import Header from "../components/Header";
-import styles from "./Webpage5.module.css";
+import ButtonPrimary from "./ButtonPrimary";
+import ButtonSecondary from "./ButtonSecondary";
+import CardForm from "./CardForm";
+import Header from "./Header";
+import styles from "../Webpage5.module.css";
 
-const Webpage5 = () => {
+const Webpage5 =async () => {
+
+  const takeaquiz=()=>{
+    const data=fetch("http://localhost:8000/")
+  }
   return (
     <div className={styles.webpage5}>
       <div className={styles.desktop1} />

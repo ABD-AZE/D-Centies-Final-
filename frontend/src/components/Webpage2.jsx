@@ -1,4 +1,4 @@
-import FormContainer1 from "../components/FormContainer1";
+import FormContainer1 from "./FormContainer1";
 import styles from "../Webpage2.module.css";
 
 import React from "react";
