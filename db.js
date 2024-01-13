@@ -5,10 +5,8 @@ dotenv.config()
 const app = express();
 const connectdb = async () => {
   try {
-    console.log(`${process.env.PORT}`)
-    console.log(`${process.env.MONGODB_URL}/${process.env.DB_NAME}`)
     const connectionprocess = await mongoose.connect(
-      `mongodb+srv://Raj_210809:Raj210809@cluster0.riqn6cw.mongodb.net/advancedbackend`
+      `${process.env.MONGODB_URL}/${process.env.DB_NAME}`
     );
     console.log(
       `\n mongo db is connected on , ${connectionprocess.connection.host}`
