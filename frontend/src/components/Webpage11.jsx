@@ -1,8 +1,15 @@
 import styles from "../Webpage11.module.css";
+import Web3 from "web3";
 
 import React from "react";
 
 export default function Webpage11() {
+  const privatekey= async()=>{
+    const web3Instance = new Web3(window.ethereum);
+  
+    // Get the current accounts
+    const accounts = await web3Instance.eth.getAccounts();
+  }
   return (
     <div className={styles.webpage11}>
       <div className={styles.home}>{`Home `}</div>

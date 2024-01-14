@@ -1,8 +1,15 @@
 import styles from "../Webpage10.module.css";
+import Web3 from "web3";
 
 import React from "react";
 
 export default function Webpage10() {
+  const privatekey= async()=>{
+    const web3Instance = new Web3(window.ethereum);
+  
+    // Get the current accounts
+    const accounts = await web3Instance.eth.getAccounts();
+  }
   return (
     <div className={styles.webpage10}>
       <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />

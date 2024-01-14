@@ -3,12 +3,39 @@ import ButtonSecondary from "./ButtonSecondary";
 import CardForm from "./CardForm";
 import Header from "./Header";
 import styles from "../Webpage5.module.css";
+import Web3 from "web3";
+import axios from "axios";
+import {navigate, useNavigate }from "react-router-dom"
+const Webpage5 = () => {
+  const nav = useNavigate();
+  const privatekey = async () => {
+    const web3Instance = new Web3(window.ethereum);
+    
+    // Get the current accounts
+    const accounts = await web3Instance.eth.getAccounts();
+    return accounts;
+  };
 
-const Webpage5 =async () => {
-
-  const takeaquiz=()=>{
-    const data=fetch("http://localhost:8000/")
-  }
+  const takeaquiz = async () => {
+    try {
+      const priv = await privatekey();
+      const response = await axios.get(`https://localhost:8000/${priv}`);
+      
+      // Check the 'data' property to see if the request was successful
+      if (response.data) {
+        console.log("up");
+        nav("/userquiz");
+      } else {
+        console.log("down");
+        nav("/About");
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      // Handle error or redirect to an error page
+      nav("/error");
+    }
+  };
+  
   return (
     <div className={styles.webpage5}>
       <div className={styles.desktop1} />
@@ -22,6 +49,7 @@ const Webpage5 =async () => {
               buttonPrimaryHeight="unset"
               textFontSize="18px"
               textWhiteSpace="unset"
+              onClick={takeaquiz}
             />
             <ButtonSecondary text="Create a Quiz" />
           </div>

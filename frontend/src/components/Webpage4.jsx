@@ -1,7 +1,7 @@
 import styles from "../Webpage4.module.css";
 import Web3 from "web3";
 import { useNavigate } from "react-router-dom";
-import axios from "axios"
+import axios from "axios";
 
 import React from "react";
 
@@ -18,13 +18,12 @@ export default function Webpage4() {
 
         // Get the current accounts
         const accounts = await web3Instance.eth.getAccounts();
-        setAccount(accounts); 
-        axios.post(`http://localhost:8000/${accounts}`,accounts);
-
+        axios.get(`http://localhost:8000/${accounts}`);
         alert(accounts);
 
         navigate("/home");
       } else {
+        alert("MetaMask not detected! Please install MetaMask extension.");
         console.error(
           "MetaMask not detected! Please install MetaMask extension."
         );

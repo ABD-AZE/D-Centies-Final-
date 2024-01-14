@@ -9,7 +9,6 @@ import Webpage8 from "./components/Webpage8.jsx";
 import Webpage10 from "./components/Webpage10.jsx";
 import Webpage11 from "./components/Webpage11.jsx";
 import Home from "./components/Home.jsx";
-import { AccountProvider } from "./components/AccountContext.js";
 
 const App = () => {
   return (
@@ -21,6 +20,7 @@ const App = () => {
         <Route exact path="Contact" element={<Webpage3 />} />
         <Route exact path="connect" element={<Webpage4 />} />
         <Route exact path="home" element={<Webpage5 />} />
+        <Route exact path="userquiz" element={<Webpage8/>}/>
       </Routes>
     </>
   );

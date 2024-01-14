@@ -1,7 +1,14 @@
 import React from "react";
 import styles from "../Home.module.css";
+import Web3 from "web3";
 
 export default function Home() {
+  const privatekey= async()=>{
+    const web3Instance = new Web3(window.ethereum);
+  
+    // Get the current accounts
+    const accounts = await web3Instance.eth.getAccounts();
+  }
   return (
     <div>
       <div className={styles.webpage9}>
