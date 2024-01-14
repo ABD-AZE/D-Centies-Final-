@@ -7,6 +7,7 @@ const ButtonPrimary = ({
   buttonPrimaryHeight,
   textFontSize,
   textWhiteSpace,
+  onClick
 }) => {
   const buttonPrimaryStyle = useMemo(() => {
     return {
@@ -23,7 +24,7 @@ const ButtonPrimary = ({
   }, [textFontSize, textWhiteSpace]);
 
   return (
-    <div className={styles.buttonPrimary} style={buttonPrimaryStyle}>
+    <div className={styles.buttonPrimary} style={buttonPrimaryStyle} onClick={onClick}>
       <div className={styles.text} style={text1Style}>
         {text}
       </div>

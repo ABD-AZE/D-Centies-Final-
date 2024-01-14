@@ -13,6 +13,7 @@ import mongoose from "mongoose";
       option2: { type: String },
       option3: { type: String },
       option4: { type: String },
+      correctoption:{type:String}
     },
   ]});
   let question;

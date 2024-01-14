@@ -6,8 +6,6 @@ function checkquizfield(){
     app.get("/:publicKey",async (req,res)=>{
         const publicKey = req.params.publicKey;
         const x = await user.findOne({publicKey:publicKey});
-        
-        console.log(`${publicKey}`);
         if(!x){
             const newuser = new user({
                 publicKey:publicKey
@@ -17,7 +15,6 @@ function checkquizfield(){
         }
         else{
         if(x.quizName){
-
             res.send(await question.findOne({quizName:x.quizName}));
         }
         else{

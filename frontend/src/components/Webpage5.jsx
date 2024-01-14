@@ -19,15 +19,13 @@ const Webpage5 = () => {
   const takeaquiz = async () => {
     try {
       const priv = await privatekey();
-      const response = await axios.get(`https://localhost:8000/${priv}`);
-      
+      const response = await axios.get(`http://localhost:8000/${priv}`);
+      console.log(response);
       // Check the 'data' property to see if the request was successful
       if (response.data) {
-        console.log("up");
         nav("/userquiz");
       } else {
-        console.log("down");
-        nav("/About");
+        nav("/activequiz");
       }
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -35,6 +33,9 @@ const Webpage5 = () => {
       nav("/error");
     }
   };
+  const createquiz = async ()=>{
+    
+  }
   
   return (
     <div className={styles.webpage5}>
