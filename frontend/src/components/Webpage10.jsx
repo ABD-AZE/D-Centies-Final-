@@ -7,7 +7,6 @@ export default function Webpage10() {
   const privatekey= async()=>{
     const web3Instance = new Web3(window.ethereum);
   
-    // Get the current accounts
     const accounts = await web3Instance.eth.getAccounts();
   }
   return (
